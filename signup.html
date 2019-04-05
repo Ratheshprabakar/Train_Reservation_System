@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>
+Signup 
+</title>
+<style>
+body{
+  background-image:url(train1.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  border-radius:20px;
+
+}
+h1
+{
+  text-align:center;
+  color:black;
+  background-color:none;
+  font-family:"verdana";
+  border-radius:20px;
+}
+button {
+  background-color:#4CAF50;
+  border-radius:20px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form
+{
+  background-color: lightgrey;
+  border-radius:20px;
+  width: 300px;
+  border: 25px  red green;
+  padding: 35px;
+  margin: 35px;
+  font-family:"verdana"
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<b><h1>TRAIN RESERVATION SYSTEM</h1></b>
+<a href="http://localhost/main.html"><button>Back</button></a>
+<form method="post" action="signup.php">
+	<label for="Login"><h2 align="center">Sign up</h2></label>
+	<label for="username">Username</label>
+	<input type="text" name="username" size="35" placeholder="Enter Your Username" required><br><br>
+	<label for="password">Password</label>
+	<input type="password" name ="password" size="35" placeholder="Enter the password" required><br><br>
+	<label for="firstname">First Name</label>
+	<input type="text" name ="firstname" size="35" placeholder="Enter Your Firstname" required><br><br>
+	<label for="lastname">Last Name</label>
+	<input type="text" name ="lastname" size="35" placeholder="Enter the Lastname" required><br><br>
+	<label for="gender">Gender</label>
+    		<select id="type" name="Gender">
+      		<option value="Male">Male</option>
+      		<option value="Female">Female</option>
+    		</select>
+	<label for="age">Age</label>
+	<input type="text" name ="age" size="35" placeholder="Enter the age" required><br><br>
+	<br>
+	<button type="submit">Continue</button>
+</form>
+</body>
+</html>

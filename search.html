@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+<style>
+ body
+  {
+    background-image:url(train9.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  form
+{
+  background-color: lightgrey;
+  width: 300px;
+  border: 25px  red green;
+  padding: 35px;
+  margin: 35px;
+  font-family:"verdana";
+  border-radius:20px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <form method="post" action="search.php">
+<label for="Sourcedes"><h2 align="center">Enter the Source and Destination</h2></label>
+<label for="source">Source</label>
+<input type="text" name="source" size="35" placeholder="Enter the source"><br>
+<br>
+<label for="destination">Destination</label>
+<input type="text" name ="destination" size="35" placeholder="Enter the Destination"><br><br>
+<br>
+<a href=http://localhost/search.php><button type="submit">Search</button></a>
+</form>
+</body>
+</html>
